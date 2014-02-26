@@ -1,0 +1,103 @@
+email_data=[]
+headers=[]
+email_first = raw_input('enter First Name:')
+email_last = raw_input('enter Last Name:')
+email_ssn = raw_input('enter SSN:')
+email_address = raw_input('enter address:')
+email_address2 = raw_input('enter address2:')
+email_city = raw_input('enter city:')
+email_state = raw_input('enter state:')
+email_zip = raw_input('enter zip:')
+email_email = raw_input('enter email:')
+email_phone = raw_input('enter phone:')
+email_start = raw_input('enter start date:')
+email_costcenter = raw_input('enter Cost center:')
+email_job = raw_input('enter description:')
+email_protocol = raw_input('enter protocol:')
+email_client = raw_input('enter client:')
+email_comments = raw_input('enter comments:')
+email_request = raw_input('enter requester:')
+
+email_first = email_first.split(':')
+headers.append(email_first[0])
+email_data.append(email_first[1])
+
+
+email_last = email_last.split(':')
+headers.append(email_last[0])
+email_data.append(email_last[1])
+
+email_ssn = email_ssn.split(':')
+headers.append(email_ssn[0])
+email_data.append(email_ssn[1])
+
+email_address = email_address.split(':')
+headers.append(email_address[0])
+email_data.append(email_address[1])
+
+email_address2 = email_address2.split(':')
+headers.append(email_address2[0])
+email_data.append(email_address2[1])
+
+email_city = email_city.split(':')
+headers.append(email_city[0])
+email_data.append(email_city[1])
+
+email_state = email_state.split(':')
+headers.append(email_state[0])
+email_data.append(email_state[1])
+
+email_zip = email_zip.split(':')
+headers.append(email_zip[0])
+email_data.append(email_zip[1])
+
+email_email = email_email.split(':')
+headers.append(email_email[0])
+email_data.append(email_email[1])
+
+email_phone = email_phone.split(':')
+headers.append(email_phone[0])
+email_data.append(email_phone[1])
+
+email_start = email_start.split(':')
+headers.append(email_start[0])
+email_data.append(email_start[1])
+
+email_costcenter = email_costcenter.split(':')
+headers.append(email_costcenter[0])
+email_data.append(email_costcenter[1])
+
+email_job = email_job.split(':')
+headers.append(email_job[0])
+email_data.append(email_job[1])
+
+email_protocol = email_protocol.split(':')
+headers.append(email_protocol[0])
+email_data.append(email_protocol[1])
+
+email_client = email_client.split(':')
+headers.append(email_client[0])
+email_data.append(email_client[1])
+
+email_comments = email_comments.split(':')
+headers.append(email_comments[0])
+email_data.append(email_comments[1])
+
+email_request = email_request.split(':')
+headers.append(email_request[0])
+email_data.append(email_request[1])
+
+new_headers=[]
+for i in range(0, len(headers)):
+    new_headers.append(headers[i].replace(" ", ""))
+    
+print new_headers  
+print email_data
+
+
+
+"""email = email_data
+email_list = []
+for i in email:
+        email_list.append(i)
+        print email_list"""
